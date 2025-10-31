@@ -1,0 +1,13 @@
+{
+  "name": "pitchdeckagent-desktop",
+  "version": "1.0.0",
+  "description": "Desktop packaging helpers for PitchDeckAgent (Electron)",
+  "main": "main.js",
+  "scripts": {
+    "build:desktop": "cd frontend && npm run build && cd .. && electron .",
+    "start:desktop": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.0"
+  }
+}

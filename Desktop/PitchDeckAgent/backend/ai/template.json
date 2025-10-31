@@ -1,0 +1,12 @@
+{
+  "title": "Pitch Deck",
+  "slides": [
+    { "title": "Title", "content": "{{idea}} - One-liner" },
+    { "title": "Problem", "content": "Describe the problem your product solves for {{audience}}." },
+    { "title": "Solution", "content": "How your product solves the problem (tone: {{tone}})." },
+    { "title": "Market", "content": "Target market and size for {{audience}}." },
+    { "title": "Business Model", "content": "How you will make money (goal: {{goal}})." },
+    { "title": "Team", "content": "Key team members and why they're a good fit." },
+    { "title": "Ask", "content": "Funding ask and use of proceeds." }
+  ]
+}

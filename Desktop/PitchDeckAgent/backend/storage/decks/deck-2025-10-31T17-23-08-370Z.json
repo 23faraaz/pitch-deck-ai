@@ -1,0 +1,33 @@
+{
+  "title": "Pitch Deck",
+  "slides": [
+    {
+      "title": "Title",
+      "content": "Canned Water: Sustainable Hydration for a Conscious World"
+    },
+    {
+      "title": "Problem",
+      "content": "Plastic pollution is a global crisis. Single-use plastic water bottles contribute significantly to this, harming our oceans and ecosystems. Consumers are increasingly aware and seeking sustainable alternatives, but options are often limited or inconvenient."
+    },
+    {
+      "title": "Solution",
+      "content": "We offer premium, sustainably sourced water packaged in infinitely recyclable aluminum cans. This provides a readily available, environmentally friendly alternative to plastic bottles, appealing to eco-conscious consumers and reducing plastic waste. Our sleek design and commitment to sustainability differentiate us from competitors, resonating with a market demanding both quality and responsibility."
+    },
+    {
+      "title": "Market",
+      "content": "Our target market is environmentally conscious consumers aged 18-45, residing primarily in urban areas with access to grocery stores, cafes, and online retail. The global bottled water market is a multi-billion dollar industry, with a growing segment dedicated to sustainable alternatives. We estimate a serviceable obtainable market (SOM) of $X million within the sustainable beverage category, focusing on specific geographic regions and retail channels."
+    },
+    {
+      "title": "Business Model",
+      "content": "We will generate revenue through the sale of canned water via wholesale distribution to grocery stores, cafes, restaurants, and online retailers. We will also explore direct-to-consumer sales through our website and partnerships with e-commerce platforms. Profitability will be driven by efficient sourcing, optimized production processes, and strategic marketing initiatives. Our goal is to establish a strong brand presence and capture a significant share of the rapidly growing sustainable beverage market, achieving positive cash flow within [ timeframe ]."
+    },
+    {
+      "title": "Team",
+      "content": "Our team combines expertise in beverage production, sustainable packaging, and marketing. [Name 1], CEO, has [Number] years of experience in the beverage industry and a proven track record of launching successful brands. [Name 2], COO, possesses extensive knowledge of sustainable sourcing and supply chain management. [Name 3], CMO, brings a wealth of experience in digital marketing and brand building. We are passionate about sustainability and dedicated to building a successful business that makes a positive impact on the planet."
+    },
+    {
+      "title": "Ask",
+      "content": "We are seeking $X in seed funding to scale our production capacity, expand our distribution network, and implement our marketing strategy. These funds will be allocated as follows: [Percentage]% for production equipment and facilities, [Percentage]% for marketing and branding initiatives, [Percentage]% for inventory and distribution, and [Percentage]% for working capital. This investment will enable us to achieve [Specific Milestone 1] within [Timeframe] and [Specific Milestone 2] within [Timeframe], positioning us for rapid growth and market leadership."
+    }
+  ]
+}

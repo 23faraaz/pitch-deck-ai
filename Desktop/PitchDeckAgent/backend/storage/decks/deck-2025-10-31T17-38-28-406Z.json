@@ -1,0 +1,33 @@
+{
+  "title": "Pitch Deck",
+  "slides": [
+    {
+      "title": "Title",
+      "content": "Canned Water - Sustainable Hydration for a Thirsty World"
+    },
+    {
+      "title": "Problem",
+      "content": "Plastic water bottles are a major environmental problem, contributing to pollution and harming ecosystems. Consumers are increasingly aware and seeking sustainable alternatives, yet convenient and affordable options are limited. Seed investors are looking for businesses that create a positive impact."
+    },
+    {
+      "title": "Solution",
+      "content": "Canned Water offers a sustainable, convenient, and cost-effective alternative to plastic water bottles. Our premium water is packaged in recyclable aluminum cans, reducing plastic waste and environmental impact. We offer a refreshing and eco-conscious choice for consumers seeking a better way to hydrate. We are also committed to carbon neutrality through verified carbon offsetting."
+    },
+    {
+      "title": "Market",
+      "content": "The bottled water market is a multi-billion dollar industry. Our target market includes environmentally conscious consumers, outdoor enthusiasts, and businesses seeking sustainable beverage options. The market is expanding rapidly as consumers become more aware of the negative impacts of plastic. Seed investors recognize the large market opportunities in the sustainable consumer sector."
+    },
+    {
+      "title": "Business Model",
+      "content": "We will generate revenue through direct-to-consumer online sales, wholesale partnerships with retailers and restaurants, and strategic partnerships with events and organizations. Our focus is on building a strong brand presence and scaling distribution channels. Our aim is to secure significant seed funding to establish efficient supply chain, build a marketing presence and achieve profitability to grow the business and impact."
+    },
+    {
+      "title": "Team",
+      "content": "Our team comprises experienced professionals in beverage manufacturing, marketing, and sustainability. [Name] has [Number] years of experience in the beverage industry and a proven track record of launching successful products. [Name] is an expert in sustainable supply chains and carbon offsetting. Together, we possess the expertise and passion to build a leading canned water brand."
+    },
+    {
+      "title": "Ask",
+      "content": "We are seeking $[Amount] in seed funding to expand our manufacturing capabilities, build our marketing presence, and scale our distribution channels. The proceeds will be used to purchase equipment, hire key personnel, and implement a comprehensive marketing strategy."
+    }
+  ]
+}

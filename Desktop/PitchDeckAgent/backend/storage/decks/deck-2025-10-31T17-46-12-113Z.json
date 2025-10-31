@@ -1,0 +1,33 @@
+{
+  "title": "Pitch Deck",
+  "slides": [
+    {
+      "title": "Title",
+      "content": "Canned Water - Refreshing Sustainability"
+    },
+    {
+      "title": "Problem",
+      "content": "Plastic water bottles are a major environmental pollutant, contributing to landfill waste and ocean pollution. Consumers are increasingly aware of this issue and are seeking sustainable alternatives, but current options are often inconvenient or expensive."
+    },
+    {
+      "title": "Solution",
+      "content": "Canned Water offers a convenient, sustainable, and readily recyclable alternative to plastic water bottles. Our product provides the same refreshing hydration in an infinitely recyclable aluminum can, addressing consumer demand for eco-friendly options without compromising convenience or quality. Canned Water directly tackles plastic pollution and promotes a circular economy."
+    },
+    {
+      "title": "Market",
+      "content": "The target market includes environmentally conscious consumers, retailers seeking sustainable product offerings, and events/venues aiming to reduce their plastic footprint. The bottled water market is a multi-billion dollar industry, with a growing segment dedicated to sustainable alternatives. Our market size is the eco-conscious bottled water consumer sector, estimated at $X billion and growing annually at Y%."
+    },
+    {
+      "title": "Business Model",
+      "content": "We will generate revenue through direct sales to consumers (online and through partnerships with retailers), wholesale distribution to businesses and events, and potential licensing agreements. The goal is to raise seed funding to scale production, expand distribution channels, and implement targeted marketing campaigns to drive customer acquisition and market share."
+    },
+    {
+      "title": "Team",
+      "content": "Our team comprises experienced professionals in beverage manufacturing, sustainable packaging, and marketing. [Name] has X years of experience in beverage production and supply chain management. [Name] brings expertise in sustainable packaging solutions. [Name] has a proven track record in building brands and driving sales growth in the consumer packaged goods industry. We are a passionate and dedicated team committed to delivering a sustainable and successful beverage product."
+    },
+    {
+      "title": "Ask",
+      "content": "We are seeking $XXX,000 in seed funding to scale our production capacity, expand our distribution network, and implement a targeted marketing strategy. These funds will enable us to achieve key milestones, including establishing strategic partnerships with retailers, increasing brand awareness, and achieving profitability within X years. Proceeds will be allocated as follows: X% for production equipment, Y% for marketing and sales, and Z% for operations and team expansion."
+    }
+  ]
+}

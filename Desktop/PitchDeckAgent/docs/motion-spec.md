@@ -1,0 +1,22 @@
+# Motion & Transition Spec
+
+- Entrance: pages fade+lift with slight blur
+  - Classes: `.page-enter` → `.page-enter-active`
+  - Duration: 260ms, ease: cubic-bezier(0.2, 0.7, 0.3, 1)
+- Exit: pages fade up subtly
+  - Classes: `.page-exit` → `.page-exit-active`
+  - Duration: 160ms
+- Cards (hover):
+  - Scale: 1 → 1.02, translateY: -2px
+  - Blur behind intensifies: `backdrop-filter` from 18px → 28px
+  - Shadow: `--elev-1` → `--elev-2`
+  - Duration: 260ms
+- Buttons (press):
+  - Scale: 1 → 0.99 on active
+  - Ripple: radial gradient from 0 → 240px, 420ms, ease-out
+- Gloss highlight: static gradient layer on cards; does not animate to reduce GPU load
+- Modal:
+  - Backdrop: 10px blur, 45% scrim
+  - Dialog: standard card with `glow-accent`; optional subtle scale-in (disabled by default)
+- Reduced motion:
+  - Honor `prefers-reduced-motion`: collapse durations to 1ms, disable decorative motion

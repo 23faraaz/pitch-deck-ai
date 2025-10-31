@@ -1,0 +1,33 @@
+{
+  "title": "Pitch Deck",
+  "slides": [
+    {
+      "title": "Title",
+      "content": "Canned Water - Refreshing Hydration, Sustainably Packaged"
+    },
+    {
+      "title": "Problem",
+      "content": "Plastic water bottles are environmentally damaging, contributing to pollution and resource depletion. Consumers are increasingly aware and seeking sustainable alternatives."
+    },
+    {
+      "title": "Solution",
+      "content": "Canned Water provides a refreshing and sustainable alternative to plastic water bottles. Our aluminum cans are infinitely recyclable, reducing environmental impact and appealing to eco-conscious consumers. We offer pure, clean water in a convenient and easily recyclable package."
+    },
+    {
+      "title": "Market",
+      "content": "The bottled water market is a multi-billion dollar industry. Our target market includes environmentally conscious consumers, retailers seeking sustainable product offerings, and events looking for eco-friendly hydration solutions. The market is expanding rapidly as awareness of plastic pollution grows."
+    },
+    {
+      "title": "Business Model",
+      "content": "We will generate revenue through direct sales to consumers (online and retail), wholesale partnerships with grocery stores and convenience stores, and bulk sales to events and businesses. Profit margins will be optimized through efficient sourcing, production, and distribution channels. Our goal is to secure seed funding to scale up production and distribution to maximize market penetration."
+    },
+    {
+      "title": "Team",
+      "content": "Our team comprises experienced professionals in beverage manufacturing, sustainable packaging, and sales & marketing. [Name(s)] bring expertise in [relevant area(s)] and are passionate about providing a sustainable solution to a global problem."
+    },
+    {
+      "title": "Ask",
+      "content": "We are seeking $[Amount] in seed funding to scale production, expand distribution, and increase marketing efforts. Funds will be allocated to manufacturing equipment, inventory, sales team expansion, and marketing campaigns to drive brand awareness and market share."
+    }
+  ]
+}
