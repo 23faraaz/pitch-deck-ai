@@ -1,0 +1,113 @@
+{
+  "slides": [
+    {
+      "title": "Introduction: AI in Sales",
+      "content": [
+        "Transforming sales through AI technology",
+        "Optimising each stage of the sales funnel",
+        "Creating a data-driven, human-centred approach"
+      ],
+      "notes": "Welcome to our presentation. Today, we'll be discussing how AI technology is transforming the sales process, making it more efficient, and human-centred."
+    },
+    {
+      "title": "Problem Statement",
+      "content": [
+        "Manual tasks & data analysis overburdening sales teams",
+        "Difficulty in identifying high-value leads quickly",
+        "Inefficiency in personalising outreach at scale",
+        "Unreliable revenue forecasting"
+      ],
+      "notes": "Sales teams today face several challenges. They are overwhelmed with manual tasks, have difficulty identifying high-value leads, struggle with personalising outreach at scale, and often deal with unreliable revenue forecasting."
+    },
+    {
+      "title": "Solution",
+      "content": [
+        "AI tools to automate manual tasks",
+        "Analyse customer data to identify high-value leads",
+        "Personalise outreach at scale",
+        "Predictive models for accurate revenue forecasting",
+        "AI-enhanced coaching and performance management"
+      ],
+      "notes": "Our solution leverages AI to automate manual tasks, analyse data for identifying high-value leads, personalise outreach, forecast revenue accurately, and enhance coaching and performance management."
+    },
+    {
+      "title": "Market Opportunity",
+      "content": [
+        "Rising demand for automation in sales",
+        "Increasing need for data-driven sales strategies",
+        "Growing emphasis on personalised customer outreach",
+        "AI in sales market predicted to grow significantly"
+      ],
+      "notes": "The market opportunity for AI in sales is significant. There is a rising demand for automation, an increasing need for data-driven strategies, and a growing emphasis on personalised outreach."
+    },
+    {
+      "title": "Business Model",
+      "content": [
+        "B2B SaaS model",
+        "Subscription-based pricing",
+        "Tiered plans based on features and scale",
+        "Additional revenue from consulting and customisation"
+      ],
+      "notes": "We operate on a B2B SaaS model with subscription-based pricing. We offer tiered plans, and we also generate additional revenue from consulting and customisation."
+    },
+    {
+      "title": "Competitive Analysis",
+      "content": [
+        "Comparison with major competitors",
+        "Our unique selling proposition",
+        "Benefits of our AI in sales solution over competitors"
+      ],
+      "notes": "In comparison to our competitors, our unique selling proposition lies in our advanced AI capabilities and our focus on a human-centred approach. We'll discuss how our solution offers benefits over our competitors."
+    },
+    {
+      "title": "Marketing Strategy",
+      "content": [
+        "Targeting enterprise sales leaders, revenue operations executives, and innovation directors",
+        "Secondary audience: AI strategy consultants, CRM platform providers, and venture investors",
+        "Marketing through industry events, webinars, and thought leadership content"
+      ],
+      "notes": "Our marketing strategy targets key decision-makers in B2B organisations, with a secondary focus on influencers in the AI and CRM space. Our marketing tactics include industry events, webinars, and thought leadership content."
+    },
+    {
+      "title": "Financial Projections",
+      "content": [
+        "Revenue projections for the next 5 years",
+        "Expected growth rate",
+        "Projected profitability"
+      ],
+      "notes": "We'll now discuss our financial projections, including revenue, growth rate, and profitability for the next five years."
+    },
+    {
+      "title": "Team",
+      "content": [
+        "Experienced team with expertise in AI, sales, and business",
+        "Track record of successful ventures",
+        "Committed to driving innovation in sales"
+      ],
+      "notes": "Our team is made up of experienced individuals with expertise in AI, sales, and business. We have a successful track record and are committed to driving innovation in sales."
+    },
+    {
+      "title": "Ask/Next Steps",
+      "content": [
+        "Seeking funding to further develop our product and expand our team",
+        "Investment will be used for product development, marketing, and scaling operations",
+        "Next steps: Detailed discussions and due diligence"
+      ],
+      "notes": "We're seeking funding to further develop our product and expand our team. The investment will be largely used for product development, marketing, and scaling our operations. The next steps include detailed discussions and due diligence."
+    }
+  ],
+  "metadata": {
+    "deckTitle": "ai in sales",
+    "createdAt": "2025-11-10T20:53:17.633Z",
+    "totalSlides": 10,
+    "inputParameters": {
+      "title": "ai in sales",
+      "idea": "Artificial intelligence is transforming the way sales teams operate by automating manual tasks, analysing customer data, and optimising every stage of the sales funnel. It enables businesses to identify high-value leads faster, personalise outreach at scale, and forecast revenue with greater accuracy. AI tools can analyse buying signals across emails, calls, and social interactions to help salespeople prioritise prospects most likely to convert. Predictive models recommend next best actions, while generative systems produce tailored pitches, proposals, and follow-up messages in seconds. Beyond efficiency, AI in sales also enhances coaching and performance management through conversation intelligence—evaluating tone, objection handling, and success patterns across top performers. The result is a data-driven, human-centred approach where sales teams spend less time guessing and more time closing.",
+      "audience": "Enterprise sales leaders, revenue operations executives, and innovation directors in B2B organisations seeking to modernise their sales infrastructure. Secondary audiences include AI strategy consultants, CRM platform providers, and venture investors focused on automation-driven sales enablement solutions.",
+      "tone": "professional",
+      "goal": "funding",
+      "slideCount": 10,
+      "apiProvider": "openai"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "slides": [
+    {
+      "slideNumber": 1,
+      "order_index": 1,
+      "title": "Revolutionary Pet Care App",
+      "content": [
+        "Connecting pet owners with professional caregivers",
+        "24/7 availability and emergency support",
+        "GPS tracking and real-time updates"
+      ],
+      "notes": "This is our main value proposition slide. Emphasize the convenience and peace of mind our app provides."
+    },
+    {
+      "slideNumber": 2,
+      "order_index": 2,
+      "title": "The Problem",
+      "content": [
+        "67% of pet owners struggle to find reliable care",
+        "Limited availability of professional pet sitters",
+        "Lack of transparency in pet care services",
+        "Emergency situations require immediate response"
+      ],
+      "notes": "Use statistics to highlight the market pain points. Mention personal anecdotes if available."
+    },
+    {
+      "slideNumber": 3,
+      "order_index": 3,
+      "title": "Our Solution",
+      "content": [
+        "On-demand pet care marketplace",
+        "Verified and insured caregivers",
+        "Real-time monitoring and updates",
+        "Emergency response protocols"
+      ],
+      "notes": "Focus on how we solve each problem mentioned in the previous slide. Highlight our unique differentiators."
+    },
+    {
+      "slideNumber": 4,
+      "order_index": 4,
+      "title": "Market Opportunity",
+      "content": [
+        "$261B global pet care market",
+        "Growing at 6.1% annually",
+        "85 million pet-owning households in US",
+        "Average pet spending: $1,480 per year"
+      ],
+      "notes": "Present market size data with confidence. Explain our addressable market calculation."
+    },
+    {
+      "slideNumber": 5,
+      "order_index": 5,
+      "title": "Ask & Next Steps",
+      "content": [
+        "Seeking $2M seed funding",
+        "Launch in 3 major cities",
+        "Build core team of 12 people",
+        "Achieve 10K active users in Year 1"
+      ],
+      "notes": "Be specific about funding use and timeline. Show confidence in projections."
+    }
+  ],
+  "metadata": {
+    "deckTitle": "PetCare Pro - Seed Funding Pitch",
+    "createdAt": "2025-10-30T21:40:22.545Z",
+    "totalSlides": 5,
+    "inputParameters": {
+      "idea": "A mobile app for pet care",
+      "audience": "Pet owners",
+      "tone": "Professional",
+      "goal": "Seed funding"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "systemPrompt": "You are a structured pitch deck generator. You always output valid JSON that matches the required schema. Never output extra text, commentary, markdown, or explanations.",
+
+  "userPromptTemplate": "{ \"schema\": { \"type\": \"object\", \"properties\": { \"slides\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"slideNumber\": { \"type\": \"number\" }, \"title\": { \"type\": \"string\" }, \"content\": { \"type\": \"array\", \"items\": { \"type\": \"string\" } }, \"notes\": { \"type\": \"string\" } }, \"required\": [\"slideNumber\", \"title\", \"content\", \"notes\"] } }, \"metadata\": { \"type\": \"object\", \"properties\": { \"deckTitle\": { \"type\": \"string\" }, \"createdAt\": { \"type\": \"string\" }, \"totalSlides\": { \"type\": \"number\" } }, \"required\": [\"deckTitle\", \"createdAt\", \"totalSlides\"] } }, \"required\": [\"slides\", \"metadata\"] }, \"instructions\": { \"goal\": \"Generate a complete pitch deck using the provided inputs and the schema above.\", \"rules\": [ \"Always return valid JSON\", \"Use the exact structure defined in the schema\", \"Do not add any fields that are not in the schema\", \"Do not output markdown\", \"Do not wrap the JSON in codeblocks\" ] }, \"inputs\": { \"title\": \"{title}\", \"idea\": \"{idea}\", \"audience\": \"{audience}\", \"tone\": \"{tone}\", \"goal\": \"{goal}\", \"slideCount\": \"{slideCount}\" } }",
+
+  "responseFormat": {}
+}

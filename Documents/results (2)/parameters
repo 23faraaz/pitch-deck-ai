@@ -1,0 +1,9 @@
+Date: Wed 26 Feb 2025 16:37:22 
+Ligand: NC1=NC=NC2=C1N=CN2[C@H]3[C@H](O)[C@H](O)[C@@H](C(NCCC(C=C4OC)=CC=C4OC)=O)O3
+Method: AC
+Target: 2ydo_modified.pdb
+Sampling exhaustivity: 90
+Cavity prioritization: 70
+Random Initial Conditions: 1
+Box size: 75 68 60
+Box center: -22.0 16.0 -28.0

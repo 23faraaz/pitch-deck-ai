@@ -1,0 +1,395 @@
+/* Glassmorphic Modern AI UI Theme - Pitch Deck Generator */
+/* Deep blue gradient background with frosted glass effects */
+
+:root {
+  /* ================================
+     GLASSMORPHIC COLOR PALETTE
+  ================================ */
+  
+  /* Background Gradient - Deep Navy to Indigo */
+  --bg-gradient: linear-gradient(145deg, #020617 0%, #0B1120 100%);
+  --bg-primary: #020617;        /* Deep midnight navy */
+  --bg-secondary: #0B1120;      /* Indigo-blue */
+  --bg-tertiary: #1a1b3a;       /* Slightly lighter for contrast */
+  
+  /* Glass Effect Colors */
+  --glass-bg: rgba(255, 255, 255, 0.05);         /* Base glass background */
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);   /* Hover state */
+  --glass-border: rgba(255, 255, 255, 0.15);     /* Glass borders */
+  --glass-border-hover: rgba(255, 255, 255, 0.25); /* Hover borders */
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;      /* Pure white for primary text */
+  --text-secondary: #B0C4DE;    /* Soft blue-gray secondary text */
+  --text-muted: #6B7280;        /* Muted text for subtle elements */
+  
+  /* Accent Colors - Cyan & Violet */
+  --accent-cyan: #00E0FF;       /* Electric cyan */
+  --accent-violet: #9E7BFF;     /* Soft lavender violet */
+  --accent-success: #00FF9C;    /* Success green */
+  --accent-error: #FF4747;      /* Error red */
+  --accent-warning: #FFB800;    /* Warning amber */
+  
+  /* Export Button Colors with Glow */
+  --export-pdf: #FF6B47;        /* Orange-red for PDF */
+  --export-pptx: #FFB800;       /* Gold for PowerPoint */
+  --export-html: #8B5CF6;       /* Violet for HTML */
+  --export-json: #00FF9C;       /* Green for JSON */
+  
+  /* Gradient Buttons */
+  --button-gradient: linear-gradient(135deg, #00E0FF 0%, #9E7BFF 100%);
+  --button-gradient-hover: linear-gradient(135deg, #00B8CC 0%, #8A67E6 100%);
+  
+  /* Opacity Variations */
+  --cyan-10: rgba(0, 224, 255, 0.1);
+  --cyan-20: rgba(0, 224, 255, 0.2);
+  --cyan-30: rgba(0, 224, 255, 0.3);
+  --violet-10: rgba(158, 123, 255, 0.1);
+  --violet-20: rgba(158, 123, 255, 0.2);
+  --violet-30: rgba(158, 123, 255, 0.3);
+  --white-5: rgba(255, 255, 255, 0.05);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-20: rgba(255, 255, 255, 0.2);
+  
+  /* ================================
+     GLASSMORPHIC SHADOWS & GLOWS
+  ================================ */
+  
+  /* Glass Card Shadows */
+  --shadow-glass: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-glass-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
+  
+  /* Glow Effects */
+  --glow-cyan: 0 0 20px rgba(0, 224, 255, 0.3);
+  --glow-violet: 0 0 20px rgba(158, 123, 255, 0.3);
+  --glow-button: 0 0 25px rgba(0, 224, 255, 0.4);
+  --glow-input-focus: 0 0 15px rgba(0, 224, 255, 0.2);
+  
+  /* Traditional Shadows */
+  --shadow-card: 0 0 32px rgba(0, 224, 255, 0.08);
+  --shadow-hover: 0 0 12px rgba(0, 224, 255, 0.3);
+  --shadow-focus: 0 0 16px rgba(0, 224, 255, 0.4);
+  --shadow-button: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-button-hover: 0 8px 24px rgba(0, 224, 255, 0.15);
+  --shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  
+  /* Backdrop Blur */
+  --blur-glass: 25px;
+  --blur-light: 10px;
+  --blur-heavy: 40px;
+  
+  /* ================================
+     TYPOGRAPHY
+  ================================ */
+  
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  
+  /* ================================
+     SPACING SYSTEM
+  ================================ */
+  
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 0.75rem;    /* 12px */
+  --space-lg: 1rem;       /* 16px */
+  --space-xl: 1.5rem;     /* 24px */
+  --space-2xl: 2rem;      /* 32px */
+  --space-3xl: 2.5rem;    /* 40px */
+  --space-4xl: 3rem;      /* 48px */
+  
+  /* ================================
+     BORDER RADIUS - GLASSMORPHIC
+  ================================ */
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;      /* Main glassmorphic card radius */
+  --radius-xl: 24px;
+  --radius-full: 50px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* ================================
+     Z-INDEX LAYERS
+  ================================ */
+  
+  --z-background: -1;
+  --z-default: 1;
+  --z-content: 10;
+  --z-navbar: 100;
+  --z-modal: 1000;
+  
+  /* ================================
+     TRANSITIONS
+  ================================ */
+  
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.25s ease-out;
+  --transition-slow: 0.4s ease-out;
+  
+  /* Easing Functions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* ================================
+     Z-INDEX LAYERS
+  ================================ */
+  
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal-backdrop: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-tooltip: 70;
+  
+  /* ================================
+     BLUR EFFECTS
+  ================================ */
+  
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 12px;
+  --blur-xl: 16px;
+  
+  /* ================================
+     GRADIENTS
+  ================================ */
+  
+  --gradient-cyan: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-teal) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  --gradient-glow: linear-gradient(135deg, 
+    rgba(0, 224, 255, 0.1) 0%, 
+    rgba(0, 119, 255, 0.1) 100%
+  );
+}
+
+/* ================================
+   BASE STYLES
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-normal);
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--cyan-30);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: var(--cyan-30);
+  color: var(--text-primary);
+}
+
+/* Focus styles */
+:focus {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ================================
+   UTILITY CLASSES
+================================ */
+
+.text-gradient {
+  background: var(--gradient-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-cyan {
+  box-shadow: var(--shadow-hover);
+}
+
+.glow-focus {
+  box-shadow: var(--shadow-focus);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(var(--blur-lg));
+  -webkit-backdrop-filter: blur(var(--blur-lg));
+}
+
+/* Responsive containers */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-sm {
+  max-width: 600px;
+}
+
+.container-lg {
+  max-width: 1400px;
+}
+
+/* ================================
+   ANIMATION KEYFRAMES
+================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 8px var(--cyan-20);
+  }
+  50% {
+    box-shadow: 0 0 16px var(--cyan-30);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ================================
+   LOADING ANIMATIONS
+================================ */
+
+.loading-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--white-10),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+.pulse-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* ================================
+   SCROLLBAR STYLING
+================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-cyan);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-cyan) var(--bg-secondary);
+}

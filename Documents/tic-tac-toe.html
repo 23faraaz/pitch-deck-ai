@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .square {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border: 2px solid #ccc;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .square:hover {
+      background: #f0f0f0;
+    }
+    #reset {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="board">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <button id="reset">Reset</button>
+
+  <script>
+    const squares = document.querySelectorAll('.square');
+    const resetButton = document.getElementById('reset');
+    let currentPlayer = 'X';
+    let gameState = Array(9).fill(null);
+
+    squares.forEach((square, index) => {
+      square.addEventListener('click', () => {
+        if (gameState[index] || checkWinner()) return;
+        gameState[index] = currentPlayer;
+        square.textContent = currentPlayer;
+        if (checkWinner()) {
+          alert(currentPlayer + ' wins!');
+        } else {
+          currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+      });
+    });
+
+    function checkWinner() {
+      const combos = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+      ];
+      return combos.some(([a, b, c]) =>
+        gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]
+      );
+    }
+
+    resetButton.addEventListener('click', () => {
+      gameState.fill(null);
+      squares.forEach(s => (s.textContent = ''));
+      currentPlayer = 'X';
+    });
+  </script>
+</body>
+</html>

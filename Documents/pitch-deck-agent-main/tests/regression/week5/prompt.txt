@@ -1,0 +1,24 @@
+Generate a full JSON pitch deck using the exact schema below. 
+Do not add fields, rename fields, change types, or include any text outside valid JSON.
+
+The pitch deck should be for a zero-waste food delivery startup.
+Follow the schema strictly and produce deterministic, structured output.
+
+Always use this schema:
+
+{
+  "slides": [
+    {
+      "slideNumber": "number",
+      "title": "string",
+      "content": ["string"],
+      "notes": "string"
+    }
+  ],
+  "metadata": {
+    "industry": "string",
+    "tone": "string",
+    "deckLength": "number"
+  }
+}
+

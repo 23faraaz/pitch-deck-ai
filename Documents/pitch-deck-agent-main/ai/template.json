@@ -1,0 +1,37 @@
+{
+  "systemPrompt": "You are a strict schema-first generator. You ALWAYS output valid JSON that matches the provided schema. Never include natural language outside of JSON. Never add extra fields. Only return data that conforms exactly to the schema.",
+  
+  "userPromptTemplate": "Create a pitch deck for:\n\nPresentation Title: {title}\nProject Description: {idea}\nTarget Audience: {audience}\nTone: {tone}\nGoal: {goal}\n\nGenerate slides that match the provided schema exactly.",
+
+  "schema": {
+    "type": "object",
+    "properties": {
+      "slides": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "slideNumber": { "type": "number" },
+            "title": { "type": "string" },
+            "content": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "notes": { "type": "string" }
+          },
+          "required": ["slideNumber", "title", "content", "notes"]
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "deckTitle": { "type": "string" },
+          "createdAt": { "type": "string" },
+          "totalSlides": { "type": "number" }
+        },
+        "required": ["deckTitle", "createdAt", "totalSlides"]
+      }
+    },
+    "required": ["slides", "metadata"]
+  }
+}
