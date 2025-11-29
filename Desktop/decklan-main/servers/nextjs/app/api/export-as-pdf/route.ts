@@ -1,0 +1,137 @@
+import path from "path";
+import fs from "fs";
+import puppeteer from "puppeteer";
+
+import { sanitizeFilename } from "@/app/(presentation-generator)/utils/others";
+import { NextResponse, NextRequest } from "next/server";
+
+const resolveAppDataDirectory = () => {
+  if (process.env.APP_DATA_DIRECTORY && process.env.APP_DATA_DIRECTORY.trim()) {
+    return process.env.APP_DATA_DIRECTORY;
+  }
+
+  const candidates = [
+    path.resolve(process.cwd(), "..", "..", "app_data"),
+    path.resolve(process.cwd(), "..", "app_data"),
+    "/app_data",
+  ];
+
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+
+  return candidates[0];
+};
+
+export async function POST(req: NextRequest) {
+  const { id, title } = await req.json();
+  if (!id) {
+    return NextResponse.json(
+      { error: "Missing Presentation ID" },
+      { status: 400 }
+    );
+  }
+  const browser = await puppeteer.launch({
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--disable-web-security",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-features=TranslateUI",
+      "--disable-ipc-flooding-protection",
+    ],
+  });
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 720 });
+  page.setDefaultNavigationTimeout(300000);
+  page.setDefaultTimeout(300000);
+
+  // Construct the URL - use NEXT_PUBLIC_APP_URL if available, otherwise construct from request or use default
+  let baseUrl = process.env.NEXT_PUBLIC_APP_URL;
+  
+  if (!baseUrl) {
+    const host = req.nextUrl.host;
+    // If host doesn't include a port, check if it's localhost and add port 3000
+    // Otherwise use the host as-is (might be through nginx on port 80)
+    if (host === 'localhost' || host.startsWith('localhost:')) {
+      baseUrl = `http://localhost:${process.env.PORT || 3000}`;
+    } else {
+      baseUrl = `${req.nextUrl.protocol}//${host}`;
+    }
+  }
+  
+  if (!baseUrl) {
+    baseUrl = `http://localhost:${process.env.PORT || 3000}`;
+  }
+  
+  const pdfMakerUrl = `${baseUrl}/pdf-maker?id=${id}`;
+  await page.goto(pdfMakerUrl, {
+    waitUntil: "networkidle0",
+    timeout: 300000,
+  });
+
+  await page.waitForFunction('() => document.readyState === "complete"');
+
+  try {
+    await page.waitForFunction(
+      `
+      () => {
+        const allElements = document.querySelectorAll('*');
+        let loadedElements = 0;
+        let totalElements = allElements.length;
+        
+        for (let el of allElements) {
+            const style = window.getComputedStyle(el);
+            const isVisible = style.display !== 'none' && 
+                            style.visibility !== 'hidden' && 
+                            style.opacity !== '0';
+            
+            if (isVisible && el.offsetWidth > 0 && el.offsetHeight > 0) {
+                loadedElements++;
+            }
+        }
+        
+        return (loadedElements / totalElements) >= 0.99;
+      }
+      `,
+      { timeout: 300000 }
+    );
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  } catch (error) {
+    console.log("Warning: Some content may not have loaded completely:", error);
+  }
+
+  const pdfBuffer = await page.pdf({
+    width: "1280px",
+    height: "720px",
+    printBackground: true,
+    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+  });
+
+  browser.close();
+
+  const sanitizedTitle = sanitizeFilename(title ?? "presentation");
+  const appDataDirectory = resolveAppDataDirectory();
+
+  const destinationPath = path.join(
+    appDataDirectory,
+    "exports",
+    `${sanitizedTitle}.pdf`
+  );
+  await fs.promises.mkdir(path.dirname(destinationPath), { recursive: true });
+  await fs.promises.writeFile(destinationPath, pdfBuffer);
+
+  return NextResponse.json({
+    success: true,
+    path: destinationPath,
+  });
+}

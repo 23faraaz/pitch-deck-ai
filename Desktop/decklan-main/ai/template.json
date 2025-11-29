@@ -1,0 +1,43 @@
+{
+    "systemPrompt": "You are Decklan — an expert structured presentation generator. You always output valid JSON that matches the provided schema. Never output text, markdown, or explanations.",
+    
+    "userPromptTemplate": {
+      "title": "{title}",
+      "description": "{description}",
+      "goal": "{goal}",
+      "audience": "{audience}",
+      "tone": "{tone}"
+    },
+  
+    "schema": {
+      "type": "object",
+      "properties": {
+        "slides": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slideNumber": { "type": "number" },
+              "title": { "type": "string" },
+              "content": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "notes": { "type": "string" }
+            },
+            "required": ["slideNumber", "title", "content", "notes"]
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "model": { "type": "string" },
+            "timestamp": { "type": "string" }
+          },
+          "required": ["model", "timestamp"]
+        }
+      },
+      "required": ["slides", "metadata"]
+    }
+  }
+  
