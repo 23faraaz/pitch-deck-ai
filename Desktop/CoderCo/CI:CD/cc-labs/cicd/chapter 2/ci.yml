@@ -1,0 +1,17 @@
+name: Faraaz Mo CI CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Test message
+        run: echo "Hello Everyone"

@@ -1,0 +1,20 @@
+# key value pairs
+
+name: Faraaz Mo
+age: 22
+job: Cloud Engineer
+
+# Lists
+fruits:
+- apple
+- banana
+- orange
+- mango
+
+# Nested Elements
+
+person:
+  name: Faraaz Mohammad
+  age: 22
+  job: Cloud Engineer
+  
